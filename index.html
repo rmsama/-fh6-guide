@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="极限竞速：地平线6 最全攻略站 — 车辆推荐、赚钱技巧、调校参数、隐藏车辆、季节赛攻略">
+<title>FH6攻略站 | 地平线6最全指南</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <nav>
+    <div class="logo">🏎️ FH6攻略站</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">首页</a>
+      <a href="guides/newbie.html">新手入门</a>
+      <a href="guides/money.html">赚钱攻略</a>
+      <a href="guides/cars.html">车辆推荐</a>
+      <a href="guides/tuning.html">调校参数</a>
+      <a href="tools/">🛠️ AI工具</a>
+      <a href="#vip" class="btn-vip">⭐ VIP解锁</a>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <h1>极限竞速：地平线6</h1>
+    <p>最全攻略 · AI调校工具 · 实时更新</p>
+    <div class="hero-search">
+      <input type="text" id="searchBox" placeholder="搜攻略... 如：S1级别最强车、赚钱最快方法" onkeyup="searchGuides()">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 热门攻略卡片 -->
+  <section class="section">
+    <h2>🔥 大家都在看</h2>
+    <div class="card-grid">
+      <a href="guides/newbie.html" class="card">
+        <div class="card-icon">🎮</div>
+        <h3>新手入门全流程</h3>
+        <p>开局选车 · 地图解锁 · 快速升级</p>
+      </a>
+      <a href="guides/money.html" class="card">
+        <div class="card-icon">💰</div>
+        <h3>2026最新赚钱攻略</h3>
+        <p>挂机刷钱 · 拍卖行倒卖 · 比赛收益表</p>
+      </a>
+      <a href="guides/cars.html" class="card">
+        <div class="card-icon">🏎️</div>
+        <h3>全级别最强车辆推荐</h3>
+        <p>D/C/B/A/S1/S2/X 每级TOP10</p>
+      </a>
+      <a href="guides/tuning.html" class="card">
+        <div class="card-icon">🔧</div>
+        <h3>终极调校参数</h3>
+        <p>漂移/极速/操控 三套方案直接复制</p>
+      </a>
+      <a href="guides/season.html" class="card">
+        <div class="card-icon">📅</div>
+        <h3>季节赛全通攻略</h3>
+        <p>每周更新 · 奖励车获取 · 任务路线</p>
+      </a>
+      <a href="guides/hidden.html" class="card">
+        <div class="card-icon">🗺️</div>
+        <h3>隐藏车辆 & 车房宝物</h3>
+        <p>全地图标注 · 获取条件一览</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- AI工具区 -->
+  <section class="section dark-bg">
+    <h2>🤖 AI智能工具</h2>
+    <p class="subtitle">别人手动算，你一键出结果。这是我们真正的护城河。</p>
+    <div class="card-grid">
+      <a href="tools/tune.html" class="card tool-card">
+        <div class="card-icon">🎯</div>
+        <h3>AI调校计算器</h3>
+        <p>输入车辆 → AI给出最优调校参数</p>
+        <span class="tag tag-free">免费3次</span>
+      </a>
+      <a href="tools/compare.html" class="card tool-card">
+        <div class="card-icon">⚖️</div>
+        <h3>车辆对比器</h3>
+        <p>两车参数PK · 帮你选最优</p>
+        <span class="tag tag-free">免费</span>
+      </a>
+      <a href="tools/track.html" class="card tool-card">
+        <div class="card-icon">🏁</div>
+        <h3>赛道难度评级</h3>
+        <p>每条赛道用什么车 · 怎么过弯</p>
+        <span class="tag tag-vip">VIP</span>
+      </a>
+      <a href="tools/auction.html" class="card tool-card">
+        <div class="card-icon">💎</div>
+        <h3>拍卖行估价器</h3>
+        <p>输入车辆 → 显示当前市场价</p>
+        <span class="tag tag-vip">VIP</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- VIP区域 -->
+  <section class="section" id="vip">
+    <h2>⭐ VIP专属内容</h2>
+    <div class="vip-box">
+      <div class="vip-left">
+        <h3>¥19.9 永久解锁全部内容</h3>
+        <ul>
+          <li>✅ AI调校计算器 无限使用</li>
+          <li>✅ 拍卖行估价器 实时数据</li>
+          <li>✅ 赛道难度评级 全解锁</li>
+          <li>✅ 隐藏车辆PDF下载</li>
+          <li>✅ 每周季节赛推送通知</li>
+          <li>✅ VIP交流群</li>
+        </ul>
+        <button class="btn-pay" onclick="showPay()">🔓 立即解锁 ¥19.9</button>
+      </div>
+      <div class="vip-right">
+        <div class="testimonial">
+          <p>"用AI调校工具调出来的S1车，公路赛直接刷了3秒！"</p>
+          <span>— FH6玩家 · 已解锁VIP</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>🏎️ FH6攻略站 · 用AI做最好的地平线6攻略</p>
+  <p class="small">本站内容由AI生成并人工校验，持续更新中</p>
+</footer>
+
+<!-- 付费弹窗 -->
+<div id="payModal" class="modal" style="display:none">
+  <div class="modal-content">
+    <span class="close" onclick="closePay()">×</span>
+    <h2>解锁VIP全部内容</h2>
+    <p>¥19.9 · 永久有效 · 一次付费</p>
+    <div class="pay-methods">
+      <div class="pay-option">
+        <h4>📱 微信扫码支付</h4>
+        <div class="qr-placeholder">微信收款码截图放这里</div>
+        <p>付完截图发客服微信：<strong>你的微信号</strong></p>
+      </div>
+      <div class="pay-or">或</div>
+      <div class="pay-option">
+        <h4>🔗 面包多支付（自动发货）</h4>
+        <button class="btn-pay" onclick="openMianbaoduo()">跳转支付 ¥19.9</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
